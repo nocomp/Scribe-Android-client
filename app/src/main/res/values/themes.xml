@@ -1,0 +1,7 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Thème de base AppCompat-free pour une activité Compose. -->
+    <style name="Theme.Scribe" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:statusBarColor">#003189</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>
