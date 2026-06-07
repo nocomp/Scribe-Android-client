@@ -25,7 +25,7 @@ import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material.icons.automirrored.filled.Reply
 import androidx.compose.material.icons.filled.Edit
 import androidx.compose.material.icons.filled.DoneAll
-import androidx.compose.material.icons.filled.Forward
+import androidx.compose.material.icons.automirrored.filled.Forward
 import androidx.compose.material.icons.filled.Refresh
 import androidx.compose.material3.Button
 import androidx.compose.material3.Card
@@ -329,7 +329,7 @@ private fun DetailView(m: MessageDto, viewModel: MessagesViewModel, modifier: Mo
                     }
                 }
                 OutlinedButton(onClick = { viewModel.forward(m) }) {
-                    Icon(Icons.Filled.Forward, contentDescription = null)
+                    Icon(Icons.AutoMirrored.Filled.Forward, contentDescription = null)
                     Spacer(Modifier.width(6.dp))
                     Text("Transférer")
                 }

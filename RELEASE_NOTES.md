@@ -1,4 +1,4 @@
-# SCRIBE Mobile v0.7.0
+# SCRIBE Mobile v0.7.1
 
 🇫🇷 **Première version publique du client Android de SCRIBE.**
 Suivi et pilotage de crise hospitalière depuis le mobile : tableau de bord temps réel,

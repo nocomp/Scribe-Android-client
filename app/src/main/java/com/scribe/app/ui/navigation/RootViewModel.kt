@@ -20,7 +20,16 @@ class RootViewModel @Inject constructor(
     val state: StateFlow<AuthState> = session.state
 
     init {
-        viewModelScope.launch { delay(1000); session.bootstrap(); localeStore.bootstrap() }
+        viewModelScope.launch {
+            try {
+                delay(800)
+                session.bootstrap()
+                runCatching { localeStore.bootstrap() }
+            } catch (e: Throwable) {
+                // Filet de sécurité : on ne reste jamais bloqué sur le splash.
+                runCatching { session.logout() }
+            }
+        }
     }
 
     fun logout() {
